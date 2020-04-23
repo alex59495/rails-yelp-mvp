@@ -3,7 +3,7 @@
 <p> category : <%= @restaurant.category %> </p>
 <hr>
 <% @restaurant.reviews.each do |review| %>
-<%= review.content %>
+<%= review.content %> || <%= review.rating %>
 <hr>
 <% end %>
 <%= link_to "Add a new review", new_restaurant_review_path(@restaurant) %>
